@@ -523,7 +523,7 @@ export default function EnhancedTable({
             setFilter={setFilter}
             setOpen={setOpen}
             data={data}
-            setData={setData}
+            setVisibleRows={setVisibleRows}
           />
         </Box>
       </Modal>

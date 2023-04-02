@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, TextField, Typography, Button } from "@mui/material";
 
-function FilterForm({ filter, setFilter, setOpen, data, setData }) {
+function FilterForm({ filter, setFilter, setOpen, data, setVisibleRows }) {
   const filterData = (data, filter) => {
-    console.log(data);
     let rows = data;
     if (filter.userEmail)
       rows = rows.filter((row) => row.userEmail === filter.userEmail);
@@ -12,8 +11,7 @@ function FilterForm({ filter, setFilter, setOpen, data, setData }) {
     if (filter.roomNumber)
       rows = rows.filter((row) => row.roomNumber === filter.roomNumber);
 
-    console.log(rows);
-    setData(rows);
+    setVisibleRows(rows);
   };
 
   return (
