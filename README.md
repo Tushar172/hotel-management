@@ -1,1 +1,1 @@
-DEPLOYMENT LINK :- https://hotel-management-f3xe.vercel.app/
+DEPLOYMENT LINK :- https://scaler-hotel-management-ynlr.vercel.app/
