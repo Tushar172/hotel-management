@@ -390,6 +390,10 @@ export default function EnhancedTable({
       headers: {
         "Content-Type": "application/json",
       },
+    }).then((res) => {
+      if (res.status === 200) {
+        window.location.reload();
+      }
     });
   };
 

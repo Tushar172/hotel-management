@@ -29,9 +29,12 @@ function Form({ edit, roomData, bookingID, selected }) {
         startTime: newCheckIn,
         endTime: newCheckOut,
       }),
+    }).then((res) => {
+      if (res.status === 200) {
+        window.location.reload();
+      }
     });
   };
-
   const updateBooking = async () => {
     const newCheckIn = new Date(checkIn).toISOString();
     const newCheckOut = new Date(checkOut).toISOString();
@@ -47,6 +50,10 @@ function Form({ edit, roomData, bookingID, selected }) {
         startTime: newCheckIn,
         endTime: newCheckOut,
       }),
+    }).then((res) => {
+      if (res.status === 200) {
+        window.location.reload();
+      }
     });
   };
 
