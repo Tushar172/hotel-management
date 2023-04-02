@@ -384,10 +384,8 @@ export default function EnhancedTable({
 
   const isSelected = (name) => selected.indexOf(name) !== -1;
 
-  
   const handleDelete = () => {
-
-    fetch(`http://localhost:5000/booking/delete/${bookingID}`, {
+    fetch(`/api/booking/delete/${bookingID}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://hotel-management-q9mf4ujue-tushar172.vercel.app/:path*"
+    },
+    {
+      "source": "/api/:path*/",
+      "destination": "https://hotel-management-q9mf4ujue-tushar172.vercel.app/:path*/"
+    }
+  ]
+}

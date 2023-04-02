@@ -3,7 +3,7 @@ import { Box, TextField, Typography, Button } from "@mui/material";
 
 function FilterForm({ filter, setFilter, setOpen, data, setData }) {
   const filterData = (data, filter) => {
-
+    console.log(data);
     let rows = data;
     if (filter.userEmail)
       rows = rows.filter((row) => row.userEmail === filter.userEmail);
@@ -11,7 +11,8 @@ function FilterForm({ filter, setFilter, setOpen, data, setData }) {
       rows = rows.filter((row) => row.roomType === filter.roomType);
     if (filter.roomNumber)
       rows = rows.filter((row) => row.roomNumber === filter.roomNumber);
-      
+
+    console.log(rows);
     setData(rows);
   };
 

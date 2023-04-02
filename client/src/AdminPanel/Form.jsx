@@ -18,7 +18,7 @@ function Form({ edit, roomData, bookingID, selected }) {
     const newCheckIn = new Date(checkIn).toISOString();
     const newCheckOut = new Date(checkOut).toISOString();
 
-    fetch("http://localhost:5000/booking/create", {
+    fetch("/api/booking/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,7 +36,7 @@ function Form({ edit, roomData, bookingID, selected }) {
     const newCheckIn = new Date(checkIn).toISOString();
     const newCheckOut = new Date(checkOut).toISOString();
 
-    fetch(`http://localhost:5000/booking/update/${bookingID}`, {
+    fetch(`/api/booking/update/${bookingID}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

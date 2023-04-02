@@ -41,6 +41,7 @@ router.post("/create", async (req, res) => {
     return;
   }
 
+  console.log(data);
   const room = await prisma.room.findUnique({
     where: {
       roomNumber: data.roomNumber,
